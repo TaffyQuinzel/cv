@@ -1,0 +1,245 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Friggeri Resume/CV
+% XeLaTeX Template
+% Version 1.0 (5/5/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Adrien Friggeri (adrien@friggeri.net)
+% https://github.com/afriggeri/CV
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important notes:
+% This template needs to be compiled with XeLaTeX and the bibliography, if used,
+% needs to be compiled with biber rather than bibtex.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{friggeri-cv} % Add 'print' as an option into the square bracket to remove colors from this template for printing
+\usepackage{multicol}
+\usepackage{enumitem}
+\usepackage{scrextend}
+%\addbibresource{bibliography.bib} % Specify the bibliography file to include publications
+
+\begin{document}
+
+\header{Louis van der Burg}{}{Free Spirited Programmer} % Your name and current job title/field
+
+%----------------------------------------------------------------------------------------
+%	SIDEBAR SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{aside} % In the aside, each new line forces a line break
+\section{Contact}\\
+Haringvlietstraat 62\\
+7417 TH Deventer\\
+Nederland\\
+~\\
++31 (0)6 14 85 55 79\\
+~\\
+\href{mailto:burglfvd@gmail.com}{burglfvd@gmail.com}\\
+~\\
+Driver's license: A, B\\
+
+\section{Languages}\\
+\begin{tabular}{l r}
+   Dutch & mother tongue\\
+   English & fluid\\
+   German & good\\
+\end{tabular}
+
+\section{Programming}
+\begin{tabular}{l@{\quad} r}
+   C\#  & (+++)\\
+   PHP & (+++)\\
+   SQL & (+++)\\
+   HTML & (++)\\
+   Java  & (++)\\
+   C & (+)\\
+   Lisp & (+)\\
+\end{tabular}
+
+\end{aside}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+
+\begin{entrylist}
+   %------------------------------------------------
+   \entry
+   {2012--2016}
+   {Bacholar {\normalfont Computer Science}}
+   {Rotterdam University of Applied Sciences, Rotterdam}
+   {\textit{Graduated Cum Laude} \\
+      Electives:
+      \setlength\multicolsep{0pt}
+      \begin{multicols}{2}
+         \begin{itemize}[topsep=0pt]
+            \item Positive Psychology
+            \item Neuro-Linguistic Programming
+            \item Social Competence
+            \item Game-Theory
+            \item 2D-Animations
+            \item Fathoming Britain
+         \end{itemize}
+      \end{multicols}
+      Minor:
+      \begin{itemize}[topsep=0pt]
+         \item Security and Advanced Development Minor\\
+            Followed the \textit{Advanced Development track} on building monadic compilers.
+      \end{itemize}
+      Bacholar Thesis:
+      \begin{itemize}[topsep=0pt]
+         \item Debugging and expanding Meta Casanova\\
+            Worked on creating the \textit{Mark III} version of the Meta Casanova programming language.
+      \end{itemize}
+   }
+   %------------------------------------------------
+   \entry
+   {2001--2008}
+   {HAVO {\normalfont profile: nature \& science, nature \& health}}
+   {Walburg College, Zwijndrecht}
+   {\textit{Graduated} \\
+      Elective:
+      \begin{itemize}[topsep=0pt]
+         \item Informatica
+      \end{itemize}
+   }
+   %------------------------------------------------
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Personal Skills}
+
+\begin{multicols}{2}
+   \begin{itemize}
+      \item Social
+      \item Creative
+      \item Eager to learn
+      \item Challenge-driven
+      \item Inquisitive
+      \item Precise
+      \item Direct
+      \item Recognizing patterns
+      \item Teamplayer
+      \item Independent
+   \end{itemize}
+\end{multicols}
+
+
+\section{Professional Skills}
+
+\setkomafont{labelinglabel}{\normalfont\bfseries}
+\begin{labeling}{Visual studio}
+\item [Linux] worked with multiple distributions since 2012 (Debian, Ubuntu, Arch, Gentoo)
+\item [Vim] Using it proficiently since 2012 and still improving
+\item [Git] Used it for nearly every project since 2013
+\item [\LaTeX] Using it for most reports since 2014
+\item [Visual studio] Used it for every Microsoft Windows based project since 2014
+\item [CVS] Used it on various projects since 2015
+\end{labeling}
+
+%----------------------------------------------------------------------------------------
+%	INTERESTS SECTION
+%----------------------------------------------------------------------------------------
+
+\clearpage
+
+\section{Work Experience}
+
+\begin{entrylist}
+   %------------------------------------------------
+   \entry
+   {2015--present}
+   {Mybestseller}
+   {Rotterdam}
+   {\emph{Programmer (C\#, SQL, PHP, HTML)}
+      \begin{itemize}
+         \item Further developing and maintaining the \textit{MyBookWriter} addin for Microsoft Word
+         \item Expanding the platform of Mybestseller an various aspects
+         \item Maintaining the pinball machine
+      \end{itemize}
+   }
+   %------------------------------------------------
+   \entry
+   {2012--2016}
+   {Shell}
+   {Hendrik-ido-ambacht}
+   {\emph{Service Employee}
+      \begin{itemize}
+         \item Serving and helping customers
+         \item Keeping the gasstation clean and in working order
+         \item Working independently and keeping watch for possible dangerous situations
+      \end{itemize}
+   }
+   %------------------------------------------------
+   \entry
+   {2014--2015}
+   {Mybestseller}
+   {Rotterdam}
+   {\emph{IT Intern}
+      \begin{itemize}
+         \item Researching the problems writers encounter with Microsoft Word and the possible solitions
+         \item Creating the \textit{MyBookWriter} addin for Microsoft Word, designed to help the writers of Mybestseller
+         \item Fixing the pinball machine
+      \end{itemize}
+   }
+   %------------------------------------------------
+   \entry
+   {2010--2012}
+   {A.S. Watson Group}
+   {Zwijndrecht}
+   {\emph{Sales Employee Trekpleister}
+      \begin{itemize}
+         \item Advising customers
+         \item keeping the store in order
+         \item co\"ordinating the shelfstackers
+         \item replacing the manager when absent, both administrative and co\"ordinatingly
+      \end{itemize}
+   }
+   %------------------------------------------------
+   %% \entry
+   %% {2007-2010}
+   %% {Plus Retail West}
+   %% {Hendrik-ido-ambacht}
+   %% {\emph{Expedition Employee} \\
+   %% Floorwork and administrative tasks.}
+   %% Vloerwerk en administratie bijhouden.}
+   %------------------------------------------------
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	COMMUNICATION SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Interests}
+
+\begin{multicols}{2}
+   \begin{itemize}
+      \item Programming software
+      \item Keyboards
+      \item Observing people and the world
+      \item Philosophizing
+      \item Reading
+      \item Playing and building guitars
+      \item Solving riddles and puzzles
+      \item Walking through nature
+      \item City inline skating
+      \item Motorcycling
+   \end{itemize}
+\end{multicols}
+
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
