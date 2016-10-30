@@ -1,0 +1,246 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Friggeri Resume/CV
+% XeLaTeX Template
+% Version 1.0 (5/5/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Adrien Friggeri (adrien@friggeri.net)
+% https://github.com/afriggeri/CV
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important notes:
+% This template needs to be compiled with XeLaTeX and the bibliography, if used,
+% needs to be compiled with biber rather than bibtex.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{friggeri-cv} % Add 'print' as an option into the square bracket to remove colors from this template for printing
+\usepackage{multicol}
+\usepackage{enumitem}
+\usepackage{scrextend}
+%\addbibresource{bibliography.bib} % Specify the bibliography file to include publications
+
+\begin{document}
+
+\header{Louis van der Burg}{}{Free Spirited Programmer} % Your name and current job title/field
+
+%----------------------------------------------------------------------------------------
+%	SIDEBAR SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{aside} % In the aside, each new line forces a line break
+\section{Contact}\\
+Haringvlietstraat 62\\
+7417 TH Deventer\\
+Nederland\\
+~\\
++31 (0)6 14 85 55 79\\
+~\\
+\href{mailto:burglfvd@gmail.com}{burglfvd@gmail.com}\\
+~\\
+Rijbewijs: A, B\\
+
+\section{Talen}\\
+\begin{tabular}{l r}
+   Nederlands & moedertaal\\
+   Engels & vloeiend\\
+   Duits & gemiddeld\\
+\end{tabular}
+
+\section{Programmeren}
+\begin{tabular}{l@{\quad} r}
+   C\#  & (+++)\\
+   PHP & (+++)\\
+   SQL & (+++)\\
+   HTML & (++)\\
+   Java  & (++)\\
+   C & (+)\\
+   Lisp & (+)\\
+\end{tabular}
+
+\end{aside}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Opleidingen}
+
+\begin{entrylist}
+   %------------------------------------------------
+   \entry
+   {2012--2016}
+   {HBO {\normalfont Technische Informatica}}
+   {Hogeschool Rotterdam, Rotterdam}
+   {\textit{Cum Laude Geslaagd} \\
+      Keuzevakken:
+      \setlength\multicolsep{0pt}
+      \begin{multicols}{2}
+         \begin{itemize}[topsep=0pt]
+            \item Positieve Psychologie
+            \item Neuro-Linguistisch Programmeren
+            \item Sociale vaardigheden
+            \item Spel-theorie
+            \item 2D Animatie
+            \item Fathoming Britain
+         \end{itemize}
+      \end{multicols}
+      Minor:
+      \begin{itemize}[topsep=0pt]
+         \item Security and Advanced Development Minor\\
+            Gekozen richting: Advanced Development (gefocust op monadische compilers)\\
+      \end{itemize}
+      Afstudeer scriptie:
+      \begin{itemize}[topsep=0pt]
+         \item Debugging and expanding Meta Casanova\\
+            Met een team de \textit{Mark III} versie van de Meta Casanova programmeertaal gemaakt.
+      \end{itemize}
+   }
+   %------------------------------------------------
+   \entry
+   {2001--2008}
+   {HAVO {\normalfont profiel: natuur \& techniek, natuur \& gezondheid}}
+   {Walburg College, Zwijndrecht}
+   {\textit{Geslaagd} \\
+      Keuzevak:
+      \begin{itemize}[topsep=0pt]
+         \item Informatica
+      \end{itemize}
+   }
+   %------------------------------------------------
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Personlijke Vaardigheden}
+
+\begin{multicols}{2}
+   \begin{itemize}
+      \item Sociaal
+      \item Creatief
+      \item Leergierig
+      \item Uitdagings gedreven
+      \item Vragend
+      \item Precies
+      \item Direct
+      \item Patronen herkennen
+      \item Optimaliserend
+      \item Teamplayer
+      \item Zelfstandig
+   \end{itemize}
+\end{multicols}
+
+
+\section{Professionele Vaardigheden}
+
+\setkomafont{labelinglabel}{\normalfont\bfseries}
+\begin{labeling}{Visual studio}
+\item [Linux] In gebruik als hoofd OS sinds 2012 en kennis van meerdere distributies (Debian, Ubuntu, Arch, Gentoo)
+\item [Vim] In efficient gebruik sinds 2012
+\item [Git] Gebruikt voor bijna alle projecten sinds 2013
+\item [\LaTeX] Gebruikt voor bijna alle raporten sinds 2014
+\item [Visual studio] Gebruikt voor alle Microsoft Windows projecten sinds 2014
+\item [CVS] Gebruikt met meerdere projecten sinds 2015
+\end{labeling}
+
+%----------------------------------------------------------------------------------------
+%	INTERESTS SECTION
+%----------------------------------------------------------------------------------------
+
+\clearpage
+
+\section{Werk Ervaring}
+
+\begin{entrylist}
+   %------------------------------------------------
+   \entry
+   {2015--huidig}
+   {Mybestseller}
+   {Rotterdam}
+   {\emph{Programmeur (C\#, SQL, PHP, HTML)}
+      \begin{itemize}
+         \item Verder ontwikkelen en onderhouden van de \textit{MyBookWriter} addin voor Microsoft Word
+         \item Het platform van Mybestseller verder ontwikkelen en onderhouden
+         \item De flipperkast onderhouden
+      \end{itemize}
+   }
+   %------------------------------------------------
+   \entry
+   {2012--2016}
+   {Shell}
+   {Hendrik-ido-ambacht}
+   {\emph{Service Medewerker}
+      \begin{itemize}
+         \item De klanten helpen en bedienen
+         \item Het tankstation schoonmaken en op orde houden
+         \item Zelfstandig werken en opletten voor eventuele gevaarlijke situaties
+      \end{itemize}
+   }
+   %------------------------------------------------
+   \entry
+   {2014--2015}
+   {Mybestseller}
+   {Rotterdam}
+   {\emph{ICT Stagair}
+      \begin{itemize}
+         \item Onderzoek doen naar de problemen die schrijvers ondervindev met Microsoft Word en de mogelijke oplossingen bekijken
+         \item De \textit{MyBookWriter} addin voor Microsoft Word ontwikkelen, om de schrijvers van Mybestseller te helpen schrijven
+         \item De flipperkast repareren
+      \end{itemize}
+   }
+   %------------------------------------------------
+   \entry
+   {2010--2012}
+   {A.S. Watson Group}
+   {Zwijndrecht}
+   {\emph{Verkoop medewerker Trekpleister}
+      \begin{itemize}
+         \item Klanten adviseren
+         \item De winkel op orde houden
+         \item De vulploeg co\"ordineren
+         \item De manager vervangen als deze afwezig is, zowel administratief en co\"ordinerend
+      \end{itemize}
+   }
+   %------------------------------------------------
+   %% \entry
+   %% {2007-2010}
+   %% {Plus Retail West}
+   %% {Hendrik-ido-ambacht}
+   %% {\emph{Expedition Employee} \\
+   %% Floorwork and administrative tasks.}
+   %% Vloerwerk en administratie bijhouden.}
+   %------------------------------------------------
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	COMMUNICATION SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Interests}
+
+\begin{multicols}{2}
+   \begin{itemize}
+      \item Software programmeren
+      \item Toetsenborden
+      \item Mensen en de wereld observeren
+      \item Filosoferen
+      \item Lezen
+      \item Gitaren maken en bespelen
+      \item Raadsels en puzzels oplossen
+      \item Natuur wandelingen
+      \item Inline city skating
+      \item Motorrijden
+   \end{itemize}
+\end{multicols}
+
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
